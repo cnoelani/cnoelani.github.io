@@ -668,6 +668,9 @@ padding-top: 50px;
 }
 
 @media( max-width : 585px ){
+  .text-faded{
+    font-size: .9em;
+  }
 .board .sr-icons {
   font-size: 1em;
   color: #fff;
