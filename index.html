@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>C.Noelani Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">Home</a> -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li>
+                                 <a class="page-scroll" href="#about">About</a>
+                             </li>
+                             <li>
+                                 <a class="page-scroll" href="#experience">Experience</a>
+                             </li>
+
+                        <li>   <div class="navbar-brand hidden-xs">
+        <a class="white-circle" href="/">
+
+                                  <img class="avi" src="img/avi.jpg">
+                                </a></div></li>
+                                   <!-- <ul class="nav navbar-nav navbar-right"> -->
+                             <li>
+                                 <a class="page-scroll" href="#portfolio">Portfolio</a>
+                             </li>
+                             <li>
+                                 <a class="page-scroll" href="#contact">Contact</a>
+                             </li>
+  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+              <hr>
+                <h1 id="homeHeading">CHELSEA<br>
+                NOELANI<br>
+                EDWARDS</h1>
+<hr class="hrhead">
+
+                <h2 class="typewrite" data-period="3000" data-type='[ "Front-end web developer", "Back-end web developer", "Graphic Designer", "Software Engineer", "Traditional & Digital Artist" ]'>
+                <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                <script src="js/morphext.min.js"></script>
+                <script>
+                // credit for script: vipul mirajkar thevipulm.appspot.com
+                var TxtType = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+                };
+
+                TxtType.prototype.tick = function() {
+                  var i = this.loopNum % this.toRotate.length;
+                  var fullTxt = this.toRotate[i];
+
+                  if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                  } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                  }
+
+                  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+                  var that = this;
+                  var delta = 200 - Math.random() * 100;
+
+                  if (this.isDeleting) { delta /= 2; }
+
+                  if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                  } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                  }
+
+                  setTimeout(function() {
+                    that.tick();
+                  }, delta);
+                };
+
+                window.onload = function() {
+                  var elements = document.getElementsByClassName('typewrite');
+                  for (var i=0; i<elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-type');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                      new TxtType(elements[i], JSON.parse(toRotate), period);
+                    }
+                  }
+                  // INJECT CSS
+                  var css = document.createElement("style");
+                  css.type = "text/css";
+                  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                  document.body.appendChild(css);
+                };
+                </script>
+                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
+            </div>
+        </div>
+
+        <div class="contacticons">
+        <a href="https://github.com/cnoelani"><i class="fa fa-2x fa-github text-primary sr2-icons"></i></a>
+        <a href="https://linkedin.com/in/cnoelani"><i class="fa fa-2x fa-linkedin text-primary sr2-icons"></i></a>
+        </div>
+    </header>
+
+
+<!-- About Section -->
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">A little bit about myself...</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                    I've always believed that art and technology complimented one another, and found myself, even from a very young age,
+                    pursuing both as hobbies.
+                    Throughout my college career I took advanced art courses alongside my computer science curriculum, and was often asked
+                    why I was lugging around an art portfolio half my size in the CS Department. There existed challenges in both mediums
+                    that I felt were worth the results of my hard work, and it felt satisfying to produce things that could either inspire
+                    others or assist them in their every day lives.<br>
+                    I've since graduated with my B.S. in Computer Science and a B.A. in Spanish Language, and I am excited to see what else I can create for the world.
+                    <br>
+                    <hr class="minihr">
+                      <p class="text-faded">
+                    I really enjoy working on a team, but I do find independent projects comfortable as well. I think it's incredibly important
+                    to be adaptable no matter the circumstances, and it helps me feel like a more effective team member if I am able to tackle
+                    obstacles with a flexible mind. 
+                  </p>
+                    <a href="#portfolio" class="page-scroll btn btn-default btn-x sr-button">My Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+     <div class="container">
+      <div class="experience"> EXPERIENCE </div>
+      <hr>
+     </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+          <div class="row">
+              <div class="board">
+                  <div class="board-inner">
+                  <ul class="nav nav-tabs" id="myTab">
+                  <div class="liner"></div>
+                   <li class="active">
+                   <a href="#home" data-toggle="tab" title="Education">
+                    <span class="round-tabs one">
+                            <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                    </span>
+                </a></li>
+
+                <li><a href="#profile" data-toggle="tab" title="Work">
+                   <span class="round-tabs two">
+                       <i class="fa fa-4x fa-cogs text-primary sr-icons"></i>
+                   </span>
+         </a>
+               </li>
+               <li><a href="#messages" data-toggle="tab" title="Skills">
+                   <span class="round-tabs three">
+                       <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                   </span> </a>
+                   </li>
+
+                   <li><a href="#settings" data-toggle="tab" title="Certificates">
+                       <span class="round-tabs four">
+                          <i class="fa fa-4x fa-certificate text-primary sr-icons"></i>
+                       </span>
+                   </a></li>
+
+                   <li><a href="#doner" data-toggle="tab" title="Volunteer/ETC">
+                       <span class="round-tabs five">
+                            <i class="fa fa-4x fa-star text-primary sr-icons"></i>
+                       </span> </a>
+                   </li>
+
+                   </ul></div>
+
+                   <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+
+                        <h2 class="head text-center">EDUCATION</h2>
+                        <hr>
+                        <p class="narrow">
+     <h3>B.S. COMPUTER SCIENCE / DEC. 2017</h3>
+    <h4>Central Connecticut State University</h4>
+<hr class="minihr">
+    <h3>B.A. SPANISH LANGUAGE / DEC. 2017</h3>
+    <h4>Central Connecticut State University</h4>
+<hr class="minihr">
+    <h3>MINOR IN JAPANESE LANGUAGE / 2014</h3>
+    <h4>Kansai Gaidai University</h4>
+  <i><h5>Semester abroad studying in Osaka, Japan.</h5></i>
+
+                        </p>
+<hr>
+                        <p class="text-center">
+
+              </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3 class="head text-center">WORK</h3>
+                        <hr>
+                        <p class="narrow">
+                          <h5><b> 2015 - Present</h5></b>
+                          <h3>PET CARE ASSOCIATE / PETSMART</h3>
+                     <hr class="minihr">
+                     <h5><b> 2013 - 2014 </h5></b>
+                     <h3>PROFESSIONAL PET SITTER / WAGGING TAILS</h3>
+                     <hr class="minihr">
+                     <h5><b> 2012</h5></b>
+                     <h3>FINANCIAL PLANNING OFFICE ASSISTANT / BALLARD ASSOCIATES</h3>
+                     <hr class="minihr">
+                     <h5><b> 2010 - 2011 </h5></b>
+                     <h3>QUALITY ASSURANCE / FIELD SERVICES UNLIMITED</h3>
+                        </p>
+<hr>
+                        <p class="text-center">
+
+              </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="messages">
+                        <h3 class="head text-center">SKILLS</h3>
+                <hr>        <p class="narrow text-center">
+                  <div class="row">
+                          <div class="col-md-4">
+                            <ul class="ulskill">
+                            <li>»Java (most experience)</li>
+                            <li>»C/C++ (most experience)</li>
+                            <li>»C#</li>
+                            <li>»Python</li>
+                            <li>»Ruby</li>
+                            <li>»HTML5/CSS3</li>
+                            <li>»JavaScript</li>
+                            <li>»JQuery</li>
+                            <li>»Ruby on Rails</li>
+                            <li>»SQL Database</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="ulskill">
+                            <li>»Debugging, experience debugging code that is not my own</li>
+                            <li>»Familiar with networking concepts</li>
+                            <li>»Amazon AWS experience</li>
+                            <li>»Computer Forensics</li>
+                            <li>»Unity game engine familiarity</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="ulskill">
+                            <li>»Adobe Photoshop CS5/CS6</li>
+                            <li>»PowerShell, command line scripting experience</li>
+                            <li>»AngularJS experience</li>
+                            <li>»Cloud9 proficiency</li>
+                            <li>»NetBeans/Eclipse/Adobe Dreamweaver/MS Visual Studio IDE</li>
+                            <li>»Microsoft Office Suite</li>
+                          </ul>
+                          </div>
+                      </div>
+                        </p>
+<hr>
+                        <p class="text-center">
+
+              </p>
+                    </div>
+                    <div class="tab-pane fade" id="settings">
+                        <h3 class="head text-center">CERTIFICATES</h3>
+              <hr>          <p class="narrow text-center">
+                          <h3><a href="https://www.coursera.org/account/accomplishments/verify/3LCRPVLEXHDX">INTRODUCTION TO GAME DEVELOPMENT</a> / DEC. 2017<br></h3>
+                          <i><h4>Michigan State University on Coursera</h4></i>
+
+                        </p>
+<hr>
+                        <p class="text-center">
+
+              </p>
+                    </div>
+                    <div class="tab-pane fade" id="doner">
+    <div class="text-center">
+    <h3 class="head text-center">VOLUNTEER/ETC.</h3>
+    </div>
+    <p class="narrow text-center">
+      <hr>
+      <h4>Raised $1,030 for Extra-Life charity by streaming video games to raise money for CT Children’s Medical Center</h4>
+<hr class="minihr">
+    <h4>  Attended 5-day leadership and communication seminar</h4>
+<hr class="minihr">
+    	<h4>Volunteer experience with Rotary Club of Farmington, during hosted marathons and for Amber Alert Children’s services</h4>
+<hr class="minihr">
+    <h4>	Member of Golden Key Honor Society</h4>
+<hr class="minihr">
+    <h4>	Past Graphic Designer of university's Computer Science club</h4>
+<hr>
+    </p>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    </section>
+
+
+<!-- Portfolio Gallery Section  -->
+<section id="prtfl">
+ <div class="container">
+   PORTFOLIO   <hr class="portfolio">
+
+ </div>
+</section>
+
+
+
+    <section class="no-padding" id="portfolio">
+      <div class="container gal-container">
+  <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#1">
+        <img src="img/dfarmmap.png">
+      </a>
+      <div class="modal fade" id="1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+            <div class="gal-not">  <a href="https://digitalfarmingtonmap.org/" target="_blank"><img src="img/dfarmmap.png"></a></div>
+            </div>
+              <div class="col-md-12 description">
+                <h4>
+                  Utilizing Agile practices, our team of four worked on this maintenance project for the Stanley-Whitman House   museum over the
+                   course of the semester. I worked heavily with SQL, JQuery, PHP, CSS/HTML, JavaScript and the Google Map API for the project.
+                    Our team collaborated via GitHub and Slack for communication, and we coordinated iterative sprints for deadlines. </h4>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#2">
+        <img src="img/breaddit.png">
+      </a>
+      <div class="modal fade" id="2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <div class="gal-not"><a href="https://shielded-harbor-18051.herokuapp.com/" target="_blank"><img src="img/breaddit.png"></a></div>
+            </div>
+              <div class="col-md-12 description">
+                <h4>An article aggregation site designed for my final project in Web Programming at CCSU. Deployed on heroku,
+                  a user is able to sign up, create an account and also edit their account (create an avatar, assign D.O.B., gender, name)
+                and then submit articles that other users have the ability to create comments on. Utilizes Ruby on Rails technology
+                and done in C9 environment.</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#3">
+        <img src="img/boxshooter.png">
+      </a>
+      <div class="modal fade" id="3" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img/boxshooter.png">
+            </div>
+              <div class="col-md-12 description">
+                <h4>Final Course Assignment for Michigan State University's Intro To Game Development Course. Worked in Unity to
+                 create a first person perspective 'shooter' game that allowed the user to aim and destroy moving targets that had
+                colors corresponding to certain event triggers. The goal of the first level is to reach a certain score before the timer
+                reaches zero, and then the user will access a bonus round that allows them to reach for a higher score with targets set to
+                higher difficulty. </h4>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#4">
+        <img src="img/portfolio.png">
+      </a>
+      <div class="modal fade" id="4" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img/portfolio.png">
+            </div>
+              <div class="col-md-12 description">
+                <h4>My portfolio website, utilizing Bootstrap framework.</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#5">
+        <img src="img/woman.jpg">
+      </a>
+      <div class="modal fade" id="5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img/woman.jpg">
+            </div>
+              <div class="col-md-12 description">
+                <h4>One of my more recent traditional watercolor pieces, done during a live modeling session at my university.</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#6">
+        <img src="img/mushroom.png">
+      </a>
+      <div class="modal fade" id="6" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img/mushroom.png">
+            </div>
+              <div class="col-md-12 description">
+                <h4>A fantasy-style character design created by myself utilizing Adobe Photoshop C6.</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+    <div class="box">
+      <a href="#" data-toggle="modal" data-target="#7">
+        <img src="img/bannerlogo.png">
+      </a>
+      <div class="modal fade" id="7" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="modal-body">
+              <img src="img/bannerlogo.png">
+            </div>
+              <div class="col-md-12 description">
+                <h4>A logo I designed digitally, for a banner on Twitch streaming services. I took reference from the name, 'Pterafractyl',
+                and gave the logo an older 80's video game arcade aesthetic. I designed this in Photoshop CS5. </h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-envelope-o fa-4x sr-icons"></i>
+                    <p><a href="mailto:cedwards@my.ccsu.edu">cedwards@my.ccsu.edu</a></p>
+                    <hr class="minihr">  <a href="https://github.com/cnoelani">
+                      <i class="fa fa-github-square fa-2x sr3-icons"></i> </a>
+                      <a href="https://linkedin.com/in/cnoelani"> <i class="fa fa-linkedin fa-2x sr3-icons"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
